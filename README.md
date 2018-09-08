@@ -51,4 +51,45 @@ Mike O'Donnell
 (your name here)
 ```
 
--   then you need to talk to git to tell it you'd like to "stage", then "commit" your changes:
+-   then you need to talk to git to tell it you'd like to "stage", then "commit" your changes
+
+make sure you've actually changed something and that git is tracking it:
+
+``` bash
+$ git status
+```
+
+<img src="man/figures/status.png">
+
+note the red text indicating it's not staged yet.
+
+``` bash
+$ git add .
+# the '.' indicates you want all files to be staged, you can explicitly type the filenames if you don't
+```
+
+now check to be sure it's staged:
+
+``` bash
+$ git status
+```
+
+<img src="man/figures/status_2.png">
+
+note the green text. Now you're ready to commit:
+
+``` bash
+$ git commit -m "added my name"
+```
+
+the -m is for message, which is mandatory. If you leave it out, it will open your default text editor since git assumes you wanted to do a long message.
+
+now push to your remote repo ("origin" on Github) "Master"
+
+``` bash
+$ git push origin master
+```
+
+Now that you've pushed the file to your Forked Github repo, you can press the pull-request button on the file in my repo so I can accept the changes.
+
+Good luck.
