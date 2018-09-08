@@ -17,7 +17,12 @@ http://happygitwithr.com/new-github-first.html
 It's a bit easy to get lost making changes from local to Github so I always start by cloning an
 already created, empty (except for README.md) Github repo.
 
+To start, this document is in Markdown format, which means you can add code, which can (or not) be evaluated in-line.
 
-```{r}
-3*2
+For example:
+
+```{r, echo = TRUE, eval = TRUE}
+curve(sin, -2*pi, 2*pi)
 ```
+
+
