@@ -49,7 +49,7 @@ So the steps are:
 
 ```{r eval = FALSE}
 # in Terminal/shell
-$ git clone https://github.com/mikeod38/BU_R_and_Git.git
+$ git clone https://github.com/<your Github username>/BU_R_and_Git.git
 ```
 
 - next, edit the names.txt document using any text editor (NOT MS WORD) to add your name.
